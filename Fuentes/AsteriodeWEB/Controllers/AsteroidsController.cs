@@ -16,13 +16,12 @@ namespace AsteriodeWEB.Controllers
     [TypeFilter(typeof(ExceptionAsteroideFilters))]
     public class AsteroidsController : ControllerBase
     {
-        private readonly ILogger<AsteroidsController> _logger;
-
+       
         private const String STR_KEY = "zb0vnoe8bLPOS3HffDPKD1djhaiLrny6LMSOQ5kh";
 
-        public AsteroidsController(ILogger<AsteroidsController>  logger)
+        public AsteroidsController()
         {
-            this._logger = logger;
+            
         }
        
         [HttpGet]
