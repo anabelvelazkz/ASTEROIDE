@@ -6,6 +6,7 @@ namespace AsteroideTest
     [TestClass]
     public class AsteroideUnitTest
     {
+        //Metodo sin argumentos
         [TestMethod]
         public void TestMethod1()
         {
@@ -13,7 +14,7 @@ namespace AsteroideTest
             var controller = new AsteroidsController();
             var result = controller.GetAsteroids();
         }
-
+        //Metodo con dias mayor que 7
         [TestMethod]
         public void TestMethod2()
         {
@@ -22,7 +23,7 @@ namespace AsteroideTest
             var result = controller.GetAsteroids(days);
         }
 
-
+        //Metodo con dias menos que 1
         [TestMethod]
         public void TestMethod3()
         {
@@ -30,7 +31,7 @@ namespace AsteroideTest
             var controller = new AsteroidsController();
             var result = controller.GetAsteroids(days);
         }
-
+        //Metodo con ejecucion ok
         [TestMethod]
         public void TestMethod4()
         {
